@@ -1,0 +1,50 @@
+﻿
+<ion-view view-title="Motion Lists">
+    <ion-content>
+     <img class="full-image" src="data/{{selectedFort.Img}}">
+
+          <div class="onImg">
+            <h2>{{selectedFort.Name}}</h2>
+            <h4>{{selectedFort.Type}}</h4>
+            <button class="button button-fab button-balanced icon ion-location" ng-click="selectMap()"></button>
+          </div>
+        <!-- <div class="list">
+            <a class="item item-thumbnail-left" ng-repeat="fort in forts" href="#" ng-click="findValue(fort.Name)">
+              <img src="data/{{fort.Img}}">
+              <h2>{{fort.Name}}</h2>
+              <p>{{fort.History}}</p>
+            </a>
+        </div> -->
+        <div class="list card">
+
+
+          <div class="item item-body">
+            <img class="full-image" src="data/{{selectdFort.Img}}">
+            <p>
+              {{selectedFort.History}}
+            </p>
+            <p>
+              <a href="#" class="subdued">1 Like</a>
+              <a href="#" class="subdued">5 Comments</a>
+            </p>
+          </div>
+
+          <div class="item tabs tabs-secondary tabs-icon-left">
+            <a class="tab-item" href="#">
+              <i class="icon ion-thumbsup"></i>
+              Like
+            </a>
+            <a class="tab-item" href="#">
+              <i class="icon ion-chatbox"></i>
+              Comment
+            </a>
+            <a class="tab-item" href="#">
+              <i class="icon ion-share"></i>
+              Share
+            </a>
+          </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>

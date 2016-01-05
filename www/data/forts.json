@@ -1,0 +1,25 @@
+  {
+  "forts": [
+    {
+      "Name" : "Akola Fort",
+      "Type" : "Hill fort",
+      "History" : "Its earliest form of mud was made by one Akol Singh to protect the village. He saw a hare chasing a dog and considering this to be an auspicious sign, he built an earthen wall here to protect the village. Akola was heavily fortified in 1697 CE during the reign of Aurangzeb by Asad Khan,[1] from whom the fort took its name (Asadgad). In 1803, Arthur Wellesley camped here before proceeding to win the Battle of Argaon in the Second Anglo-Maratha War.[2] The fortress was dismantled by the British Raj in about 1870. It was reported in 1910 in a district gazetteer that the central part of the fort (the hawakhana) was used as a school.",
+      "Img": "akola.png",
+      "Coordinates" : "20.706225, 76.990019"
+  },
+  {
+      "Name" : "Alang Fort",
+      "Type" : "Hill fort",
+      "History" : "The top of the fort is a huge plateau. On the fort, there are two caves, a small temple and 11 water cisterns. Remnants of buildings are spread over the fort. Kalasubai, Aundh Fort, Patta and Bitangad are to the east of the fort, Harihar, Trymbakgad and Anjaneri to its north and Harishchandragad, Aajobagad, Khutta (pinnacle), Ratangad and Katrabai to its south.",
+      "Img": "alang.jpg",
+      "Coordinates" : "19.5827, 73.6612"
+  },
+  {
+      "Name" : "Raigad Fort",
+      "Type" : "Hill fort",
+      "History" : "Raigad is a hill fort situated in the Mahad, Raigad district of Maharashtra, India. The Maratha king Chhatrapati Shivaji Maharaj made the fort his capital in 1674 when he was crowned King of a Maratha Kingdom which later developed into the Maratha Empire eventually covering majority of modern day India.[1][2] The fort, which rises 820 metres (2,700 ft) above sea level, is located in the Sahyadri mountain range. There are approximately 1737 steps leading to the fort, though today Raigad Ropeway, an aerial tramway, exists to reach the top of the fort in 20 minutes. The fort was looted and destroyed by the British after its capture in 1818.",
+      "Img": "raigad.jpg",
+      "Coordinates" : "18.2335, 73.4406"
+  }
+]
+}
