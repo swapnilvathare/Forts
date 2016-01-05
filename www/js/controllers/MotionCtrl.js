@@ -1,7 +1,7 @@
 ﻿app.controller('MotionCtrl', function ($scope, $stateParams, $timeout, ionicMaterialInk, ionicMaterialMotion) {
     var fab = document.getElementById('fab');
 
-    $scope.moveFab = function(dir) {
+    /*$scope.moveFab = function(dir) {
         fab.style.display = 'none';
         fab.className = fab.className.replace('button-fab-top-left', '');
         fab.className = fab.className.replace('button-fab-top-right', '');
@@ -11,7 +11,7 @@
         $timeout(function() {
             fab.style.display = 'block';
         }, 100);
-    };
+    };*/
 
     $scope.motionFab = function(type) {
         var shouldAnimate = false;

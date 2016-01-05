@@ -22,28 +22,60 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 
 .onImg {
-	margin-top: -100px;
-	padding: 10px;
+	margin-top: -77px;
+	padding: 10px 10px 10px 10px;
+	position: relative;
+	background: rgba(255,255,255,0);
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.6) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,0.6)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.6) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.6) 100%);
+	.button.button-fab {
+		position: absolute;
+		right:10px;
+		top:10px;
+	}
 	h2,h4 {
 		color:#fff;
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, .50);
+		margin:0;
 	}
 }
 .list.fortsList{
 	.item-thumbnail-left {
 		min-height: 100px;
-		border:1px solid #ddd;
+		border:10px solid #ddd;
+		border-right:none;
+		border-left:none;
+		margin-top:-10px;
 		.thumb {
 			position: absolute;
 			top: 10px;
 			left: 10px;
 			width: 80px;
 			height: 80px;
+			border-radius: 10px;
 			background-size: cover;
 		}
 		h2 {
 			padding-top: 11px;
 		}
+	}
+}
+.banner {
+	height: 180px;
+	background-size: cover;
+}
+.dWrap {
+	border-bottom:10px solid #ddd;
+	padding: 10px;
+	.title {
+		font-size:16px;
+		text-transform:uppercase;
+		margin-bottom:5px;
+	}
+	p:last-child {
+	margin-bottom:0;
 	}
 }
 .angular-google-map-container, .angular-google-map { 

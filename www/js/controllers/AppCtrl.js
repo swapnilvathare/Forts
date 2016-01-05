@@ -1,4 +1,4 @@
-﻿app.controller('AppCtrl', function ($rootScope, $scope, $state, $location, $window, $ionicModal, $ionicPopover, $timeout, $http, fortDataOp) {
+app.controller('AppCtrl', function ($rootScope, $scope, $state, $location, $window, $ionicModal, $ionicPopover, $timeout, $http, fortDataOp) {
 
     $scope.status;
     $scope.forts;
@@ -14,6 +14,7 @@
             });
     }
 
+     fab.style.display = 'none';
     /*$scope.addfort = function () {
 
         var stud = {
@@ -30,7 +31,7 @@
                 $scope.status = 'Unable to insert fort: ' + error.message;
             });
     };*/
-    // Form data for the login modal
+    // Form data for the login modals
     $scope.loginData = {};
 
     /*$http.get('data/forts.json').
@@ -49,11 +50,11 @@
         });
     }
 
-    var fab = document.getElementById('fab');
+    /*var fab = document.getElementById('fab');
     fab.addEventListener('click', function () {
         //location.href = 'https://twitter.com/satish_vr2011';
         window.open('https://twitter.com/satish_vr2011', '_blank');
-    });
+    });*/
 
     // .fromTemplate() method
     var template = '<ion-popover-view>' +

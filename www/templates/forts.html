@@ -1,5 +1,5 @@
 ﻿
-<ion-view view-title="Motion Lists">
+<ion-view view-title="Forts">
     <ion-content>
         <div class="list fortsList">
             <a class="item item-thumbnail-left" ng-repeat="fort in forts" ng-click="selectFort(fort)">
@@ -7,7 +7,8 @@
               <div class="thumb" style="background-image:url(data/{{fort.Img}})"></div>
               <h2>{{fort.Name}}</h2>
               <p>{{fort.Type}}</p>
-              <p>{{fort.History}}</p>
+              <p>{{fort.Address}}</p>
+              <!-- <p>{{fort.History}}</p> -->
             </a>
         </div>
 

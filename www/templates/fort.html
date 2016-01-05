@@ -1,8 +1,8 @@
 ﻿
-<ion-view view-title="Motion Lists">
+<ion-view view-title="{{selectedFort.Name}}">
     <ion-content>
-     <img class="full-image" src="data/{{selectedFort.Img}}">
-
+     <!-- <img class="full-image" src="data/{{selectedFort.Img}}"> -->
+          <div class="banner" style="background-image:url(data/{{selectedFort.Img}})"></div>
           <div class="onImg">
             <h2>{{selectedFort.Name}}</h2>
             <h4>{{selectedFort.Type}}</h4>
@@ -15,6 +15,14 @@
               <p>{{fort.History}}</p>
             </a>
         </div> -->
+        <div class="dWrap">
+          <div class="title">Address</div>
+          <p>{{selectedFort.Address}}</p>
+        </div>
+        <div class="dWrap">
+          <div class="title">Address</div>
+          <p>{{selectedFort.Name}}</p>
+        </div>
         <div class="list card">
 
 
