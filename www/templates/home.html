@@ -1,7 +1,6 @@
 ﻿
 <ion-view view-title="Forts">
-<ion-content scroll="false">
-    <!-- <ion-slide-box show-pager="false" ion-slide-tabs> -->
+<!-- <ion-content scroll="false">
     <ion-slide-box active-slide="1" slide-tabs-scrollable="true"  show-pager="false" ion-slide-tabs>
         <ion-slide ion-slide-tab-label="test">
           <div class="list fortsList">
@@ -17,18 +16,32 @@
         <ion-slide ion-slide-tab-label="secondTest" class="tab-active"><h1>Tab 2</h1></ion-slide>
         <ion-slide ion-slide-tab-label="<b>boldTest</b>"><h1>Tab 3</h1></ion-slide>
     </ion-slide-box>
-</ion-content>
-<!--     <ion-content>
-      <ion-slide-box auto-play="true" does-continue="true" slide-interval="20000" >
-        <ion-slide ng-repeat="fort in forts" ng-if="fort.Recommended =='yes'" style="background-image:url(data/{{fort.Img}})" ng-click="selectFort(fort)">
-          <span class="rcmd">Recommended</span>
-          <div class="onImg">
-            <h2>{{fort.Name}}</h2>
-            <h4>{{fort.Type}}</h4>
-            <h4>{{fort.Address}}</h4>
-          </div>
-        </ion-slide>
-      </ion-slide-box>
+</ion-content> -->
+    <ion-content>
+      <div class="homeBanner">
+        <ion-slide-box auto-play="true" does-continue="true" slide-interval="20000" >
+          <ion-slide ng-repeat="fort in forts" ng-if="fort.Recommended =='yes'" style="background-image:url(data/{{fort.Img}})" ng-click="selectFort(fort)">
+            <span class="rcmd">Recommended</span>
+            <div class="onImg">
+              <h2>{{fort.Name}}</h2>
+              <h4>{{fort.Type}}</h4>
+              <h4>{{fort.Address}}</h4>
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+      </div>
+        <div class="item item-icon-left" href="#">
+          <i class="icon ion-map"></i>
+          Explore
+        </div>
+      <div class="row explore">
+        <div class="col col-50" style="background-image:url(data/raigad.jpg)">.col.col-50</div>
+        <div class="col col-50" style="background-image:url(data/janjira.jpg)">.col.col-50</div>
+      </div>
+      <div class="row explore">
+        <div class="col col-50" style="background-image:url(data/akola.jpg)">.col.col-50</div>
+        <div class="col col-50" style="background-image:url(data/alang.jpg)">.col.col-50</div>
+      </div>
       <div class="list fortsList">
           <a class="item item-thumbnail-left" ng-repeat="fort in forts | orderBy:'Name'" ng-click="selectFort(fort)">
             <div class="thumb" style="background-image:url(data/{{fort.Img}})"></div>
@@ -40,5 +53,5 @@
       </div>
 
 
-    </ion-content> -->
+    </ion-content>
 </ion-view>

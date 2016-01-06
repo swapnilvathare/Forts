@@ -39,6 +39,16 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         }
     })
 
+    .state('app.home', {
+        url: '/home',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/home.html',
+                controller: 'HomeCtrl'
+            }
+        }
+    })
+
 
     .state('app.forts', {
         url: '/forts',
@@ -114,5 +124,5 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     ;
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/forts');
+    $urlRouterProvider.otherwise('/app/home');
 });
