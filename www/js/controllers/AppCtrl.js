@@ -6,8 +6,8 @@ app.controller('AppCtrl', function ($rootScope, $scope, $state, $location, $wind
 
     function getforts() {
         fortDataOp.getforts()
-            .success(function (studs) {
-                $scope.forts = studs.forts;
+            .success(function (forts) {
+                $scope.forts = forts.pages;
             })
             .error(function (error) {
                 $scope.status = 'Unable to load customer data: ' + error.message;

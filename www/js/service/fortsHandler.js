@@ -1,7 +1,7 @@
 var fortService = angular.module('fortService', [])
 fortService.factory('fortDataOp', ['$http', function ($http) {
 
-    var urlBase = 'data/forts.json';
+    var urlBase = 'data/wiki-forts.json';
     var fortDataOp = {};
 
     fortDataOp.getforts = function () {

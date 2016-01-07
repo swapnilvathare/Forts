@@ -20,12 +20,12 @@
     <ion-content>
       <div class="homeBanner">
         <ion-slide-box auto-play="true" does-continue="true" slide-interval="20000" >
-          <ion-slide ng-repeat="fort in forts" ng-if="fort.Recommended =='yes'" style="background-image:url(data/{{fort.Img}})" ng-click="recommendedFort(fort)">
+          <ion-slide ng-repeat="fort in forts" ng-if="fort.recommended =='yes'" style="background-image:url(data/{{fort.img}})" ng-click="recommendedFort(fort)">
             <span class="rcmd">Recommended</span>
             <div class="onImg">
-              <h2>{{fort.Name}}</h2>
-              <h4>{{fort.Type}}</h4>
-              <h4>{{fort.Address}}</h4>
+              <h2>{{fort.title}}</h2>
+              <h4>{{fort.type}}</h4>
+              <h4>{{fort.address}}</h4>
             </div>
           </ion-slide>
         </ion-slide-box>
@@ -89,12 +89,12 @@
         </div>
       </div>
       <div class="list fortsList">
-          <a class="item item-thumbnail-left" ng-repeat="fort in forts | orderBy:'Name'" ng-click="selectFort(fort)">
-            <div class="thumb" style="background-image:url(data/{{fort.Img}})"></div>
-            <span class="rcmd" ng-if="fort.Recommended =='yes'">Recommended</span>
-            <h2>{{fort.Name}}</h2>
-            <p>{{fort.Type}}</p>
-            <p>{{fort.Address}}</p>
+          <a class="item item-thumbnail-left" ng-repeat="fort in forts | orderBy:'title'" ng-click="selectFort(fort)">
+            <div class="thumb" style="background-image:url(data/{{fort.img}})"></div>
+            <span class="rcmd" ng-if="fort.recommended =='yes'">Recommended</span>
+            <h2>{{fort.title}}</h2>
+            <p>{{fort.type}}</p>
+            <p>{{fort.address}}</p>
           </a>
       </div>
 
