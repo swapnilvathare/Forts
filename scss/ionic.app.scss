@@ -127,6 +127,10 @@ ion-slide {
 	right:10px;
 	opacity:.6;
 }
+
+.slider-slide {
+	overflow:scroll;
+}
 .homeBanner {
 	.slider-slides {
 		height: 200px;
@@ -163,18 +167,37 @@ ion-slide {
 }
 .explore {
 	.col-50 {
-		background: #e7e7e7;
-		height:60px;
-		background-size: cover;
-		background-position: 0;
-		color:#fff;
-		font-size: 16px;
-		color: #fff;
-    	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    	font-weight: bold;
-    	max-width: 48%;
-    	margin:1%;
+		padding:0;
+		.inner {
+			background: #e7e7e7;
+			height:60px;
+			background-size: cover;
+			background-position: 0;
+			color:#fff;
+			font-size: 16px;
+			color: #fff;
+	    	// text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	    	font-weight: normal;
+	    	margin: 0 2.5px 5px 0;
+	    	display:block;
+	    	.layer {
+	    		height:100%;
+	    		width:100%;
+    			background:rgba(0,0,0,.4);
+    			position:relative;
+			padding:10px;
+			line-height: 40px;
+	    	}
+    	}
 	}
+	.col-50 + .col-50 {
+		.inner {
+    		margin: 0 0 5px 2.5px;
+		}
+	}
+}
+.item.noBorder {
+	border:none;
 }
 .onImg {
 	margin-top: -77px;

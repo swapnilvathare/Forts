@@ -20,7 +20,7 @@
     <ion-content>
       <div class="homeBanner">
         <ion-slide-box auto-play="true" does-continue="true" slide-interval="20000" >
-          <ion-slide ng-repeat="fort in forts" ng-if="fort.Recommended =='yes'" style="background-image:url(data/{{fort.Img}})" ng-click="selectFort(fort)">
+          <ion-slide ng-repeat="fort in forts" ng-if="fort.Recommended =='yes'" style="background-image:url(data/{{fort.Img}})" ng-click="recommendedFort(fort)">
             <span class="rcmd">Recommended</span>
             <div class="onImg">
               <h2>{{fort.Name}}</h2>
@@ -30,17 +30,63 @@
           </ion-slide>
         </ion-slide-box>
       </div>
-        <div class="item item-icon-left" href="#">
-          <i class="icon ion-map"></i>
-          Explore
-        </div>
-      <div class="row explore">
-        <div class="col col-50" style="background-image:url(data/raigad.jpg)">.col.col-50</div>
-        <div class="col col-50" style="background-image:url(data/janjira.jpg)">.col.col-50</div>
+      <div class="item noBorder item-icon-left" href="#">
+        <i class="icon ion-map"></i>
+        Explore
       </div>
       <div class="row explore">
-        <div class="col col-50" style="background-image:url(data/akola.jpg)">.col.col-50</div>
-        <div class="col col-50" style="background-image:url(data/alang.jpg)">.col.col-50</div>
+        <div class="col col-50">
+          <a class="inner" style="background-image:url(data/raigad.jpg)"  ng-click="selectedType(1)">
+            <div class="layer item-icon-right">
+              Hill Forts
+              <i class="icon ion-ios-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col col-50">
+          <a class="inner" style="background-image:url(data/janjira.jpg)"  ng-click="selectedType(2)">
+            <div class="layer item-icon-right">
+              Island Forts
+              <i class="icon ion-ios-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row explore">
+        <div class="col col-50">
+          <a class="inner" style="background-image:url(data/akola.jpg)"  ng-click="selectedType(3)">
+            <div class="layer item-icon-right">
+              Around Mumbai
+              <i class="icon ion-ios-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col col-50">
+          <a class="inner" style="background-image:url(data/alang.jpg)"  ng-click="selectedType(4)">
+            <div class="layer item-icon-right">
+               Pune district‎
+              <i class="icon ion-ios-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row explore">
+        <div class="col col-50">
+          <a class="inner" style="background-image:url(data/akola.jpg)"  ng-click="selectedType(5)">
+            <div class="layer item-icon-right">
+              Palghar district‎
+              <i class="icon ion-ios-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col col-50">
+          <a class="inner" style="background-image:url(data/alang.jpg)"  ng-click="selectedType(6)">
+            <div class="layer item-icon-right">
+               Satara district‎
+              <i class="icon ion-ios-arrow-right"></i>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="list fortsList">
           <a class="item item-thumbnail-left" ng-repeat="fort in forts | orderBy:'Name'" ng-click="selectFort(fort)">

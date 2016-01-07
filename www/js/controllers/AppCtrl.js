@@ -14,47 +14,16 @@ app.controller('AppCtrl', function ($rootScope, $scope, $state, $location, $wind
             });
     }
 
-     fab.style.display = 'none';
-    /*$scope.addfort = function () {
+    fab.style.display = 'none';
 
-        var stud = {
-            ID: 145,
-            Name: $scope.fname,
-            LastName: $scope.lname
-        };
-        fortDataOp.addfort(stud)
-            .success(function () {
-                $scope.status = 'Inserted fort! Refreshing Student list.';
-                $scope.forts.push(stud);
-            }).
-            error(function (error) {
-                $scope.status = 'Unable to insert fort: ' + error.message;
-            });
-    };*/
-    // Form data for the login modals
     $scope.loginData = {};
-
-    /*$http.get('data/forts.json').
-    success(function(data, status, headers, config) {
-        console.info(data);
-      $scope.forts = data.forts;
-    }).
-    error(function(data, status, headers, config) {
-      // log error
-    });*/
-
+    $rootScope.sType = {};
     var navIcons = document.getElementsByClassName('ion-navicon');
     for (var i = 0; i < navIcons.length; i++) {
         navIcons.addEventListener('click', function () {
             this.classList.toggle('active');
         });
     }
-
-    /*var fab = document.getElementById('fab');
-    fab.addEventListener('click', function () {
-        //location.href = 'https://twitter.com/satish_vr2011';
-        window.open('https://twitter.com/satish_vr2011', '_blank');
-    });*/
 
     // .fromTemplate() method
     var template = '<ion-popover-view>' +
